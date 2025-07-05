@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Desafio HTML DIO Bootcamp Santander</title>
+        <style>
+            main {
+                margin-left: 10%;
+                margin-right: 20%;
+                text-align: justify;
+                font-family:sans-serif
+            }
+
+            /* Menu de navegação horizontal */
+            nav {
+                background-color: #f0f0f0;
+                padding: 10px;
+                border-radius: 10px;
+                margin: 10px auto;
+                width: fit-content;
+            }
+            nav ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            nav li {
+                margin: 0 20px;
+                white-space: nowrap;
+            }
+            nav a:link {
+                color: rgb(195, 130, 255);
+                text-decoration: none;
+                padding: 10px 20px;
+                border-radius: 5px;
+                transition: all 0.3s ease;
+                font-weight: bold;
+            }
+            nav a:visited {
+                color: rgb(46, 2, 150);
+            }
+            nav a:hover {
+                color: rgb(133, 60, 222);
+            }
+            nav a:active {
+                background-color: rgb(98, 28, 162);
+                color: white;
+                transform: translateY(0);
+            }
+
+            /* Títulos */
+            h1 {
+                padding-inline-end: 0px;
+                font-family:fantasy;
+                border-bottom: 3px dashed rgb(195, 130, 255);
+            }
+            h3 {
+                margin-block-end: 0px;
+                border-left: 3px solid rgb(195, 130, 255);
+                padding-left: 10px;
+            }
+            h4 {
+                margin-block-end: 0px;
+                border-left: 3px solid rgb(195, 130, 255);
+                padding-left: 10px;
+                background-color: #f0f0f0;
+            }
+
+            /* Details gerais */
+            details {
+                background-color: #f5f5f5;
+                padding: 10px;
+                margin: 10px 0;
+                margin-left: 5%;
+                margin-right: 10%;
+            }
+            
+            details summary {
+                cursor: pointer;
+                margin-left: 0px;
+            }
+            
+            /* Estilo específico para os "Veja mais..." */
+            details.veja-mais {
+                background-color: #f0f0f0;
+            }
+            
+            /* Remove margens e padding do details principal da lista de aulas */
+            details:has(summary.lista-aulas) {
+                background-color: transparent;
+                padding: 0;
+                margin: 0;
+                margin-left: 0;
+                margin-right: 0;
+            }
+            
+            /* Remove a flecha do "Lista de aulas" */
+            summary.lista-aulas::-webkit-details-marker {
+                display: none !important;
+            }
+            
+            summary.lista-aulas::marker {
+                display: none !important;
+            }
+            
+            /* Estilo adicional para garantir que a flecha seja removida */
+            details summary.lista-aulas::-webkit-details-marker {
+                display: none !important;
+            }
+            
+            details summary.lista-aulas::marker {
+                display: none !important;
+            }
+                 
+            /* Links gerais */
+            a:link {
+                color: rgb(195, 130, 255);
+                text-decoration: none;
+                outline: none;
+            }
+            a:visited {
+                color: rgb(108, 98, 118);
+            }
+            a:hover {
+                color: rgb(98, 28, 162);
+            }
+            a:active {
+                color: rgb(255, 234, 0);
+            }
+            a:focus {
+                outline: none;
+            }
+
+            /* Layout */
+            article {
+                margin-left: 10%;
+            }        
+
+            #modulo1 {
+                 margin-left: 5%;
+            }
+            #detalhes2 {
+                margin-left: 10%;
+                cursor: pointer;
+                background-color: #f0f0f0;
+            }
+            
+
+            q {
+                font-style: italic;
+            }
+
+        </style>
+    </head>
+    <body>
+        <!-- Música de fundo -->
+        <audio autoplay loop controls preload="auto" style="position: fixed; top: 90%; right: 75%; z-index: 1000; width: 300px; background: rgba(195, 130, 255, 0.1); padding: 5px; border-radius: 50px; border: 1px solid rgb(195, 130, 255);">
+            <source src="musisc_back.wav" type="audio/wav">
+            Seu navegador não suporta o elemento de áudio.
+        </audio>
+        
+        <main>
+            <header>
+                <h1 id="inicio">Desafio HTML DIO Bootcamp Santander</h1>
+            </header>
+            
+            <nav>
+                <ul>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="tel: +5516997415751">Contato</a></li>
+                    <li><a href="#bootcamp">Bootcamp</a></li>
+                    <li><a href="#aulas">Lista de aulas</a></li>
+                    <li><a href="#experiencia">Experiência</a></li>
+                    <li><a href="https://github.com/anathiare">GitHub</a></li>
+                </ul>
+            </nav>
+            <section>
+                <h3 id="sobre">Sobre mim</h3>
+                    <small><a href="#inicio"><b>Voltar ao início</b></a></small>
+                <div style="display: flex; align-items: flex-start; gap: 20px; margin-top: 15px;">
+                    <img src="https://user-images.githubusercontent.com/113302094/211284885-f4291eef-88a6-48cb-a06e-28c3481a75b0.gif" 
+                         alt="GIF animado" 
+                         style="width: 100px; height: auto; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                    <div>
+                        <p>Olá, sou a Anathiare, uma desenvolvedora web em transformação. Atualmente, sou formada em Análise e Desenvolvimento de Sistemas na Anhanguera 
+                            Educacional e realizando o <q cite="https://www.dio.me/">Bootcamp Santander Frontend Developer na DIO</q>.
+                        </p>
+                        <p>Sou apaixonada por tecnologia e programação, e estou empolgada em aprender cada vez mais para me tornar uma desenvolvedora web competente.</p>
+                    </div>
+                </div>       
+            </section>
+            <br />
+            <section>
+                <h3 id="bootcamp">Bootcamp Santander</h2> 
+                    <small><a href="#inicio"><b>Voltar ao início</b></a></small>
+                <p>O Bootcamp Santander é um programa de formação em desenvolvimento web que tem como objetivo capacitar profissionais para atuar na área de tecnologia.
+                    O programa é composto por 8 módulos, com aulas online e práticas em projetos reais.
+                </p>
+            </section>
+            <br />
+            <section>
+                <details>
+                    <summary class="lista-aulas" style="list-style: none;"><h3 id="aulas">Lista de aulas HTML <b>	&rarr;</b></h3></summary>
+                    <small><a href="#inicio"><b>Voltar ao início</b></a></small>
+                    
+                    <h3 id="modulo1">Módulo 1</h3>
+                    <details id="detalhes2">
+                        <summary style="color: rgb(195, 130, 255);">Todas as aulas >>></summary>
+                        <ol>
+                            <li><a href="#1">Conteúdo 1 - Introdução ao HTML</a></li>
+                            <li><a href="#2">Conteúdo 2 - Trabalhando com Formulários em HTML</a></li>
+                            <li><a href="#3">Conteúdo 3 - Estruturando HTML + Formatações</a></li>
+                            <li><a href="#4">Conteúdo 4 - Trabalhando com mídias utilizando HTML</a></li>
+                            <li><a href="#5">Conteúdo 5 - Criando tabelas com HTML</a></li>
+                            <li><a href="#6">Conteúdo 6 - Entendendo HTML Semântico</a></li>
+                            <li><a href="#7">Conteúdo 7 - Trabalhando com Vídeos em HTML</a></li>
+                            <li><a href="#8">Conteúdo 8 - Trabalhando com Áudios em HTML</a></li>
+        
+                        </ol>
+                    </details>
+                    
+                    <article>
+                        <h4 id="1">Conteúdo 1 - Introdução ao HTML</h4>
+                        <small><a href="#aulas"><b>Voltar</b></a> | <a href="#2"><b>Próximo</b></a> | <a href="#inicio"><b>Voltar ao início</b></a></small>
+                                                    <p>O HTML é uma linguagem de marcação utilizada para criar páginas web. Ela é composta por tags, que são elementos que definem o conteúdo da página.</p>
+                        
+                        <details class="veja-mais">
+                            <summary style="color: rgb(195, 130, 255);">Veja mais...</summary>
+                                <p>A tag <code>&lt;html&gt;</code> é a tag principal que define o início e o fim do documento HTML. <br />
+                                    A tag <code>&lt;head&gt;</code> é a tag que define o cabeçalho do documento HTML. <br />
+                                    A tag <code>&lt;body&gt;</code> é a tag que define o corpo do documento HTML. <br />
+                                    A tag <code>&lt;div&gt;</code> que é uma tag genérica para uso geral, mas que deve ser utilizada com moderação por conta da semântica.</p>
+                                    <p>E muito mais!</p>
+                            </details>
+                    </article> 
+                    <article>
+                        <h4 id="2">Conteúdo 2 - Trabalhando com Formulários em HTML</h4>
+                        <small><a href="#1"><b>Voltar</b></a> | <a href="#3"><b>Próximo</b></a> | <a href="#inicio"><b>Voltar ao início</b></a></small>
+                                                    <p>Apredemos a utilizar os elementos de formulário para criar páginas web interativas.</p>
+                        <details class="veja-mais">
+                            <summary id="2" style="color: rgb(195, 130, 255);">Veja mais...</summary>
+                                <p>A tag <code>&lt;form&gt;</code> é a tag que define o formulário.<br />
+                            A tag <code>&lt;input&gt;</code> é a tag que define o campo de entrada de dados.<br />
+                            A tag <code>&lt;label&gt;</code> é a tag que define o rótulo do campo de entrada de dados.<br />
+                            A tag <code>&lt;button&gt;</code> é a tag que define o botão de envio do formulário.<br />
+                            A tag <code>&lt;select&gt;</code> é a tag que define o campo de seleção de opções.<br />
+                            A tag <code>&lt;textarea&gt;</code> é a tag que define o campo de texto multi-linha.</p>
+                            <p>E muito mais!</p>
+                            </details>
+                    </article>
+                    <article>
+                        <h4 id="3">Conteúdo 3 - Estruturando HTML + Formatações</h4>
+                        <small><a href="#2"><b>Voltar</b></a> | <a href="#4"><b>Próximo</b></a> | <a href="#inicio"><b>Voltar ao início</b></a></small>
+                                                    <p>Apredemos a estruturar o HTML e a utilizar as formatações para melhorar a apresentação do conteúdo, onde utilizar, como utilizar e porque utilizar.</p>
+                        <details class="veja-mais">
+                            <summary style="color: rgb(195, 130, 255);">Veja mais...</summary>
+                                <p>A tag <code>&lt;header&gt;</code> é a tag que define o cabeçalho do documento HTML.<br />
+                            A tag <code>&lt;footer&gt;</code> é a tag que define o rodapé do documento HTML.<br />
+                            A tag <code>&lt;main&gt;</code> é a tag que define o conteúdo principal do documento HTML.<br />
+                            A tag <code>&lt;section&gt;</code> é a tag que define uma seção do documento HTML.<br />
+                            A tag <code>&lt;article&gt;</code> é a tag que define um artigo do documento HTML. <br />
+                            A tag <code>&lt;aside&gt;</code> é a tag que define um conteúdo relacionado ao conteúdo principal. <br />
+                            A tag <code>&lt;nav&gt;</code> é a tag que define uma navegação do documento HTML.<br />
+                            A tag <code>&lt;div&gt;</code> que é uma tag genérica para uso geral, mas que deve ser utilizada com moderação por conta da semântica.<br />
+                            A tag <code>&lt;p&gt;</code> utilizada para parágrafos dentro de uma estruturação de textos na página</p>
+                            <p>E muito mais!</p>
+                            </details>
+                    </article>
+                    <article>
+                        <h4 id="4">Conteúdo 4 - Trabalhando com mídias utilizando HTML</h4>
+                        <small><a href="#3"><b>Voltar</b></a> | <a href="#5"><b>Próximo</b></a> | <a href="#inicio"><b>Voltar ao início</b></a></small>
+                        <p>Apredemos a utilizar as mídias para melhorar a apresentação do conteúdo, onde utilizar, como utilizar e porque utilizar.</p>
+                        <details class="veja-mais">
+                            <summary style="color: rgb(195, 130, 255);">Veja mais...</summary>
+                            <p>A tag <code>&lt;img&gt;</code> é a tag que define uma imagem do documento HTML.<br />
+                        A tag <code>&lt;video&gt;</code> é a tag que define um vídeo do documento HTML.<br />
+                        A tag <code>&lt;audio&gt;</code> é a tag que define um áudio do documento HTML.<br />
+                        A tag <code>&lt;iframe&gt;</code> é a tag que define um iframe do documento HTML.<br />
+                        A tag <code>&lt;map&gt;</code> é a tag que define um mapa do documento HTML.<br />
+                        A tag <code>&lt;area&gt;</code> é a tag que define uma área do documento HTML.<br />
+                        A tag <code>&lt;figcaption&gt;</code> é a tag que define um legenda do documento HTML.<br />
+                        A tag <code>&lt;figure&gt;</code> é a tag que define uma figura do documento HTML.</p>
+                        <p>E muito mais!</p>
+                        </details>
+                    </article>
+                    <article>
+                        <h4 id="5">Conteúdo 5 - Criando tabelas com HTML</h4>
+                        <small><a href="#4"><b>Voltar</b></a> | <a href="#6"><b>Próximo</b></a> | <a href="#inicio"><b>Voltar ao início</b></a></small>
+                                                    <p>Apredemos a criar tabelas para organizar e apresentar informações de forma estruturada.</p>
+                        <details class="veja-mais">
+                            <summary style="color: rgb(195, 130, 255);">Veja mais...</summary>
+                                <p>A tag <code>&lt;table&gt;</code> é a tag que define uma tabela do documento HTML.<br />  
+                            A tag <code>&lt;tr&gt;</code> é a tag que define uma linha da tabela.<br />
+                            A tag <code>&lt;td&gt;</code> é a tag que define uma célula da tabela.<br />
+                            A tag <code>&lt;th&gt;</code> é a tag que define uma célula de cabeçalho da tabela.<br />
+                            A tag <code>&lt;caption&gt;</code> é a tag que define um título da tabela.<br />
+                            A tag <code>&lt;thead&gt;</code> é a tag que define o cabeçalho da tabela.<br />
+                            A tag <code>&lt;tbody&gt;</code> é a tag que define o corpo da tabela.<br />
+                            A tag <code>&lt;tfoot&gt;</code> é a tag que define o rodapé da tabela.</p>
+                            <p>E muito mais!</p>    
+                            </details>
+                    </article>
+                    <article>
+                        <h4 id="6">Conteúdo 6 - Entendendo HTML Semântico</h4>
+                        <small><a href="#5"><b>Voltar</b></a> | <a href="#7"><b>Próximo</b></a> | <a href="#inicio"><b>Voltar ao início</b></a></small>
+                        <p>Apredemos a utilizar as tags semânticas para melhorar a estrutura do documento HTML, além de aprender sobre acessibilidade e SEO. 
+                            Levando em consideração pessoas com deficiências que dependem de leitores de tela para navegar na internet. <br />
+                            Os itens de acessibilidade para deficientes são utilizadas dentro das tags que contem o conteúd, fazendo com que o leitor de tela leia o conteúdo da página de forma adequada.
+                        </p>
+                        <details class="veja-mais">
+                            <summary style="color: rgb(195, 130, 255);">Veja mais...</summary>
+                            <p>A tag <code>&lt;header&gt;</code> é a tag que define o cabeçalho do documento HTML.<br />
+                            A tag <code>&lt;footer&gt;</code> é a tag que define o rodapé do documento HTML.<br />
+                            A tag <code>&lt;main&gt;</code> é a tag que define o conteúdo principal do documento HTML.<br />
+                            A tag <code>&lt;section&gt;</code> é a tag que define uma seção do documento HTML.<br />
+                            A tag <code>&lt;article&gt;</code> é a tag que define um artigo do documento HTML. <br />
+                            A tag <code>&lt;aside&gt;</code> é a tag que define um conteúdo relacionado ao conteúdo principal. <br />
+                            A tag <code>&lt;nav&gt;</code> é a tag que define uma navegação do documento HTML.</p>
+                            <p>E muito mais!</p>
+                            </details>
+
+                    </article>
+                    <article>
+                        <h4 id="7">Conteúdo 7 - Trabalhando com Vídeos em HTML</h4>
+                        <small><a href="#6"><b>Voltar</b></a> | <a href="#8"><b>Próximo</b></a> | <a href="#inicio"><b>Voltar ao início</b></a></small>
+                        <p>Apredemos a utilizar os vídeos para melhorar a apresentação do conteúdo, onde utilizar, como utilizar e porque utilizar.</p>
+                        <details class="veja-mais">
+                            <summary style="color: rgb(195, 130, 255);">Veja mais...</summary>
+                            <p>A tag <code>&lt;video&gt;</code> é a tag que define um vídeo do documento HTML.<br />
+                            A tag <code>&lt;iframe&gt;</code> é a tag que define um iframe do documento HTML, podendo adicionar vídeos de outros sites.<br />
+                            A tag <code>&lt;track&gt;</code> é a tag que define um legenda do documento HTML.</p>
+                            <p>E muito mais!</p>
+                        </details>
+                    </article>
+                    <article>
+                        <h4 id="8">Conteúdo 8 - Trabalhando com Áudios em HTML</h4>
+                        <small><a href="#7"><b>Voltar</b></a> | <a href="#aulas"><b>Próximo</b></a> | <a href="#inicio"><b>Voltar ao início</b></a></small>
+                        <p>Apredemos a utilizar os áudios para melhorar a apresentação do conteúdo, podendo ter um controle de volume, tempo de reprodução,
+                            entre outros. Além de poder deixar rolando o áudio enquanto o usuário navega pela página.</p>
+                        <details class="veja-mais">
+                            <summary style="color: rgb(195, 130, 255);">Veja mais...</summary>
+                            <p>A tag <code>&lt;audio&gt;</code> é a tag que define um áudio do documento HTML.<br />
+                            A tag <code>&lt;source&gt;</code> é a tag que define um áudio do documento HTML.<br />
+                            Adicionar <code>controls</code> para adicionar os controles de volume, tempo de reprodução, entre outros.<br />
+                            Adicionar <code>autoplay</code> para reproduzir o áudio automaticamente.<br />
+                            Adicionar <code>loop</code> para repetir o áudio.<br />
+                            Adicionar <code>muted</code> para silenciar o áudio.<br />
+                            Adicionar <code>preload</code> para carregar o áudio antes de reproduzi-lo.<br />
+                            Adicionar <code>controlslist</code> para adicionar os controles de volume, tempo de reprodução, entre outros.</p>
+                            <p>E muito mais!</p>
+                        </details>
+                    </article>
+                </details>
+            </section>   
+            <br />
+            <section>
+                <h3 id="experiencia">Experiência</h3>
+                <small><a href="#inicio"><b>Voltar ao início</b></a></small>
+                <div style="display: flex; align-items: flex-start; gap: 20px; margin-top: 15px;">
+                    <img src="https://i.pinimg.com/originals/d1/c4/33/d1c433405e4727ecd36e3417dff6025d.gif" 
+                         alt="GIF animado" 
+                         style="width: 100px; height: 70px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                    <div>
+                        <p>A experiência adquirida durante o Curso de HTML foi muito enriquecedor, pude aprender muito sobre o assunto onde eu conhecia um pouco mas agora 
+                            estou me sentindo mais confiante para criar minhas próprias páginas web, foi falado de variedades de códigos html que ainda desconhecia, acrescentando 
+                            muito ao meu conhecimento.
+                        </p>
+                    </div>
+                </div>
+                 </section>
+        </main>
+        
+    </body>
+</html>
