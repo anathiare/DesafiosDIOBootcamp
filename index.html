@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafios DIO Bootcamp - Anathiare</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f5f3ff 0%, #e9d5ff 50%, #d8b4fe 100%);
+            min-height: 100vh;
+            color: #4c1d95;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 20px;
+            box-shadow: 0 8px 32px rgba(147, 51, 234, 0.1);
+            backdrop-filter: blur(10px);
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            color: #7c3aed;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .header p {
+            font-size: 1.2em;
+            color: #6b21a8;
+            font-style: italic;
+        }
+
+        .bootcamp-info {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 25px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(147, 51, 234, 0.15);
+            border-left: 5px solid #7c3aed;
+        }
+
+        .bootcamp-info h2 {
+            color: #4c1d95;
+            margin-bottom: 15px;
+            font-size: 1.8em;
+        }
+
+        .bootcamp-info p {
+            color: #6b21a8;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+
+        .challenges-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .challenge-card {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 25px;
+            box-shadow: 0 10px 30px rgba(147, 51, 234, 0.15);
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .challenge-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #a855f7, #7c3aed, #6b21a8);
+        }
+
+        .challenge-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(147, 51, 234, 0.25);
+            border-color: #a855f7;
+        }
+
+        .challenge-icon {
+            font-size: 3em;
+            text-align: center;
+            margin-bottom: 20px;
+            color: #7c3aed;
+        }
+
+        .challenge-title {
+            font-size: 1.5em;
+            color: #4c1d95;
+            margin-bottom: 15px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .challenge-description {
+            color: #6b21a8;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .challenge-links {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .challenge-link {
+            display: inline-block;
+            padding: 12px 25px;
+            background: linear-gradient(135deg, #a855f7, #7c3aed);
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(147, 51, 234, 0.3);
+        }
+
+        .challenge-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(147, 51, 234, 0.4);
+            background: linear-gradient(135deg, #7c3aed, #6b21a8);
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            color: #6b21a8;
+            font-style: italic;
+        }
+
+        .coming-soon {
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 20px;
+            padding: 40px;
+            text-align: center;
+            margin-top: 30px;
+            box-shadow: 0 10px 30px rgba(147, 51, 234, 0.1);
+        }
+
+        .coming-soon h3 {
+            color: #7c3aed;
+            font-size: 1.5em;
+            margin-bottom: 15px;
+        }
+
+        .coming-soon p {
+            color: #6b21a8;
+            font-style: italic;
+        }
+
+        @media (max-width: 768px) {
+            .challenges-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .header h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>📚 Desafios DIO Bootcamp</h1>
+            <p>Jornada de aprendizado no Bootcamp Santander Frontend Developer</p>
+        </div>
+
+        <div class="bootcamp-info">
+            <h2>🎯 Sobre o Bootcamp</h2>
+            <p><strong>Instituição:</strong> Digital Innovation One (DIO)</p>
+            <p><strong>Programa:</strong> Bootcamp Santander Frontend Developer</p>
+            <p><strong>Duração:</strong> 8 módulos com projetos práticos</p>
+            <p><strong>Foco:</strong> HTML, CSS, JavaScript e desenvolvimento web moderno</p>
+        </div>
+
+        <div class="challenges-grid">
+            <div class="challenge-card">
+                <div class="challenge-icon">🤝</div>
+                <h3 class="challenge-title">Contribuindo em um Projeto Open Source no GitHub</h3>
+                <p class="challenge-description">
+                    Primeiro desafio focado em contribuição para projetos open source. 
+                    Aprendendo sobre colaboração, pull requests e comunidade de desenvolvimento.
+                </p>
+                <div class="challenge-links">
+                    <a href="https://github.com/digitalinnovationone/dio-lab-open-source/blob/main/community/anathiare.md" class="challenge-link" target="_self">Ver Contribuição</a>
+                    <a href="https://github.com/digitalinnovationone/dio-lab-open-source" class="challenge-link">GitHub</a>
+                </div>
+            </div>
+
+            <div class="challenge-card">
+                <div class="challenge-icon">🌐</div>
+                <h3 class="challenge-title">Criar Página Web com HTML</h3>
+                <p class="challenge-description">
+                    Desafio focado em HTML puro. Criação de uma página web completa 
+                    demonstrando conhecimentos em estruturação, semântica e boas práticas de HTML5.
+                </p>
+                <div class="challenge-links">
+                    <a href="https://github.com/anathiare/DesafiosDIOBootcamp/blob/main/desafioHtml/desafio.html" class="challenge-link" target="_self">Ver Projeto</a>
+                    <a href="https://github.com/anathiare/DesafiosDIOBootcamp" class="challenge-link">GitHub</a>
+                </div>
+            </div>
+
+            <div class="challenge-card">
+                <div class="challenge-icon">📚</div>
+                <h3 class="challenge-title">Recriar Wiki Moderno</h3>
+                <p class="challenge-description">
+                    Recriando o wiki com layout moderno e design atualizado. 
+                    Aplicação de conceitos de design web contemporâneo.
+                </p>
+                <div class="challenge-links">
+                    <a href="#" class="challenge-link">Em Breve</a>
+                </div>
+            </div>
+
+            <div class="challenge-card">
+                <div class="challenge-icon">🎨</div>
+                <h3 class="challenge-title">Primeira Landing Page</h3>
+                <p class="challenge-description">
+                    Criando a primeira landing page com HTML e CSS. 
+                    Desenvolvimento de páginas de destino atrativas e funcionais.
+                </p>
+                <div class="challenge-links">
+                    <a href="#" class="challenge-link">Em Breve</a>
+                </div>
+            </div>
+
+            <div class="challenge-card">
+                <div class="challenge-icon">🧠</div>
+                <h3 class="challenge-title">Desafios de Código</h3>
+                <p class="challenge-description">
+                    Aperfeiçoando lógica e pensamento computacional. 
+                    Resolução de problemas e desenvolvimento de algoritmos.
+                </p>
+                <div class="challenge-links">
+                    <a href="#" class="challenge-link">Em Breve</a>
+                </div>
+            </div>
+
+            <div class="challenge-card">
+                <div class="challenge-icon">🎨</div>
+                <h3 class="challenge-title">Fundamentos CSS</h3>
+                <p class="challenge-description">
+                    Fundamentos de estilização com CSS. 
+                    Aprendendo cores, tipografia, layout e design responsivo.
+                </p>
+                <div class="challenge-links">
+                    <a href="#" class="challenge-link">Em Breve</a>
+                </div>
+            </div>
+
+            <div class="challenge-card">
+                <div class="challenge-icon">📱</div>
+                <h3 class="challenge-title">Layout Discord Responsivo</h3>
+                <p class="challenge-description">
+                    Construindo layout responsivo para site do Discord com CSS. 
+                    Recriando interface moderna e adaptável.
+                </p>
+                <div class="challenge-links">
+                    <a href="#" class="challenge-link">Em Breve</a>
+                </div>
+            </div>
+
+            <div class="challenge-card">
+                <div class="challenge-icon">⚡</div>
+                <h3 class="challenge-title">Lógica JavaScript</h3>
+                <p class="challenge-description">
+                    Explorando lógica de programação com JavaScript. 
+                    Fundamentos de programação e desenvolvimento de algoritmos.
+                </p>
+                <div class="challenge-links">
+                    <a href="#" class="challenge-link">Em Breve</a>
+                </div>
+            </div>
+
+            <div class="challenge-card">
+                <div class="challenge-icon">🦸</div>
+                <h3 class="challenge-title">Classificador de Herói</h3>
+                <p class="challenge-description">
+                    Sistema para classificar nível de herói. 
+                    Aplicação prática de lógica de programação e condicionais.
+                </p>
+                <div class="challenge-links">
+                    <a href="https://github.com/anathiare/desafio-felipao/blob/main/JogoDoHeroi.html" class="challenge-link" target="_self">Ver Projeto</a>
+                    <a href="https://github.com/anathiare/desafio-felipao" class="challenge-link">GitHub</a>
+                </div>
+            </div>
+
+            <div class="challenge-card">
+                <div class="challenge-icon">🚀</div>
+                <h3 class="challenge-title">Habilidades JavaScript</h3>
+                <p class="challenge-description">
+                    Aprimorando habilidades em JavaScript. 
+                    Desenvolvimento de funcionalidades avançadas e interativas.
+                </p>
+                <div class="challenge-links">
+                    <a href="#" class="challenge-link">Em Breve</a>
+                </div>
+            </div>
+
+            <div class="challenge-card">
+                <div class="challenge-icon">💼</div>
+                <h3 class="challenge-title">Portfólio Front-end</h3>
+                <p class="challenge-description">
+                    Construindo portfólio front-end do zero com HTML, CSS e JavaScript. 
+                    Projeto completo e profissional.
+                </p>
+                <div class="challenge-links">
+                    <a href="#" class="challenge-link">Em Breve</a>
+                </div>
+            </div>
+
+            <div class="challenge-card">
+                <div class="challenge-icon">⚡</div>
+                <h3 class="challenge-title">Pokédex JavaScript</h3>
+                <p class="challenge-description">
+                    Construindo uma Pokédex com JavaScript. 
+                    Integração com APIs e desenvolvimento de aplicação interativa.
+                </p>
+                <div class="challenge-links">
+                    <a href="#" class="challenge-link">Em Breve</a>
+                </div>
+            </div>
+
+            <div class="challenge-card">
+                <div class="challenge-icon">🎮</div>
+                <h3 class="challenge-title">Jogo Yu-Gi-Oh!</h3>
+                <p class="challenge-description">
+                    Criando jogo de cartas do Yu-Gi-Oh! com JavaScript e CSS. 
+                    Desenvolvimento de game interativo e divertido.
+                </p>
+                <div class="challenge-links">
+                    <a href="#" class="challenge-link">Em Breve</a>
+                </div>
+            </div>
+
+            <div class="challenge-card">
+                <div class="challenge-icon">🌐</div>
+                <h3 class="challenge-title">GitHub Pages</h3>
+                <p class="challenge-description">
+                    Publicando portfólio profissional no GitHub Pages. 
+                    Deploy e publicação de projetos web.
+                </p>
+                <div class="challenge-links">
+                    <a href="#" class="challenge-link">Em Breve</a>
+                </div>
+            </div>
+
+            <div class="challenge-card">
+                <div class="challenge-icon">🔧</div>
+                <h3 class="challenge-title">Soluções JavaScript</h3>
+                <p class="challenge-description">
+                    Desenvolvendo soluções com JavaScript. 
+                    Projeto final integrando todos os conhecimentos adquiridos.
+                </p>
+                <div class="challenge-links">
+                    <a href="#" class="challenge-link">Em Breve</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="coming-soon">
+            <h3>🌟 Mais Desafios em Breve!</h3>
+            <p>Conforme avanço no bootcamp, novos desafios serão adicionados aqui. Cada um representa um passo importante na minha jornada de aprendizado como desenvolvedora frontend.</p>
+        </div>
+
+        <div class="footer">
+            <p>✨ Desenvolvido com carinho por Anathiare ✨</p>
+        </div>
+    </div>
+</body>
+</html> 
