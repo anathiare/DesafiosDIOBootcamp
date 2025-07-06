@@ -84,6 +84,10 @@
             border: 2px solid transparent;
             position: relative;
             overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-height: 300px;
         }
 
         .challenge-card::before {
@@ -105,14 +109,14 @@
         .challenge-icon {
             font-size: 3em;
             text-align: center;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
             color: #7c3aed;
         }
 
         .challenge-title {
             font-size: 1.5em;
             color: #4c1d95;
-            margin-bottom: 15px;
+            margin-bottom: 12px;
             text-align: center;
             font-weight: bold;
         }
@@ -120,8 +124,9 @@
         .challenge-description {
             color: #6b21a8;
             line-height: 1.6;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
             text-align: center;
+            flex-grow: 1;
         }
 
         .challenge-links {
@@ -129,6 +134,7 @@
             gap: 15px;
             justify-content: center;
             flex-wrap: wrap;
+            margin-top: auto;
         }
 
         .challenge-link {
@@ -226,7 +232,7 @@
                 </p>
                 <div class="challenge-links">
                     <a href="desafioHtml/desafio.html" class="challenge-link" target="_self">Ver Projeto</a>
-                    <a href="https://github.com/anathiare/DesafiosDIOBootcamp" class="challenge-link">GitHub</a>
+                    <a href="https://github.com/anathiare/DesafiosDIOBootcamp/tree/main/desafioHtml" class="challenge-link">GitHub</a>
                 </div>
             </div>
 
@@ -238,7 +244,9 @@
                     Aplicação de conceitos de design web contemporâneo.
                 </p>
                 <div class="challenge-links">
-                    <a href="#" class="challenge-link">Em Breve</a>
+                    <a href="desafioHtmlWiki/index.html" class="challenge-link">Ver Projeto</a>
+                    <a href="https://github.com/anathiare/DesafiosDIOBootcamp/tree/main/desafioHtmlWiki" class="challenge-link">GitHub</a>
+                
                 </div>
             </div>
 

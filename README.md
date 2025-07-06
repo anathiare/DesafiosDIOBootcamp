@@ -98,8 +98,9 @@ Acesse todos os projetos através da nossa página principal:
 ```
 DesafiosDIOBootcamp/
 ├── desafioHtml/          # Projetos HTML
+├── desafioHtmlWiki/      # Recriar Wiki Moderno
 ├── index.html            # Página principal
-└── README.md            # Este arquivo
+└── README.md             # Este arquivo
 ```
 
 ---
