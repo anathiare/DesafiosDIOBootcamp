@@ -1,11 +1,9 @@
-# 🎴 Tarô Wiki
-
 **Recriando uma página wiki moderna. Assunto: Tarô. Com HTML e CSS**
 
 ---
 
 ## 📋 Sobre o Projeto
-
+# 🎴 Tarô Wiki
 Este projeto é uma recriação moderna de uma página wiki, tema escolhido foi sobre Tarô, desenvolvido durante o **Bootcamp Santander Frontend Developer** da DIO. O objetivo foi aplicar conceitos de HTML5 semântico, CSS3 e boas práticas de acessibilidade para criar uma página informativa e visualmente atrativa.
 
 ---
