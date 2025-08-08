@@ -1,0 +1,215 @@
+/* Estilos Gerais e Fontes */
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+}
+
+body {
+  background-color: #0B0B0B;
+  background-image: url('../assets/images/woman-code.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* Banner Principal */
+
+.banner {
+  background-color: #0B0B0B;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(49, 168, 221, 0)), url('../assets/images/banner.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 605px;
+  width: 100%;
+  border-bottom: 1px solid #33A8DB;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  text-align: center;
+  color: white;
+}
+
+.banner .logo img {
+  width: 248px;
+  height: auto;
+}
+
+.banner h1 {
+  font-weight: 900;
+  font-size: 40px;
+  background: linear-gradient(180deg, #33A8DB 0%, #1472B7 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.banner p {
+  font-weight: 400;
+  font-size: 20px;
+  width: 510px;
+}
+
+.banner button {
+  background-color: transparent;
+  border: 2px solid #31A8DD;
+  padding: 16px 32px;
+  cursor: pointer;
+  color: #31A8DD;
+  font-size: 16px;
+  font-weight: 900;
+  letter-spacing: 0.21em;
+  text-transform: uppercase;
+}
+
+.banner button:hover {
+  background-color: #31A8DD;
+  color: black;
+}
+
+/* O Que Vou Aprender? */
+
+#course-content {
+  background-color: #0B0B0B;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+#course-content h2 {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 0.19em;
+  color: #33A8DB;
+  text-transform: uppercase;
+}
+
+#course-content p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #FFFFFF;
+  max-width: 792px;
+  margin: 24px auto;
+}
+
+.modules-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  margin-top: 40px;
+}
+
+.module {
+  width: 535px;
+  background-color: #252525;
+  border: 1px solid #33A8DB;
+  border-radius: 57px;
+  padding: 16px;
+  box-shadow: inset -2px 6px 4px rgba(0, 0, 0, 0.4);
+  color: #FFF;
+  font-size: 16px;
+}
+
+.module span {
+  font-weight: 900;
+  color: #33A8DB;
+}
+
+/* Transforme o Mundo */
+
+#transform-world {
+  height: 363px;
+  width: 100%;
+  border-top: 1px solid #33A8DB;
+  border-right: 1px solid #33A8DB;
+  border-bottom: 1px solid #33A8DB;
+  display: flex;
+  align-items: center;
+  padding-left: 198px;
+}
+
+#transform-world p {
+  font-size: 40px;
+  font-weight: 900;
+  color: #FFFFFF;
+  max-width: 250px;
+  text-shadow: 3px 2px 0px #33A8DB;
+  text-transform: lowercase;
+}
+
+/* Desafios Profissionais */
+
+#professional-challenges {
+  background-color: #0B0B0B;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+#professional-challenges h2 {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 0.19em;
+  color: #33A8DB;
+  text-transform: uppercase;
+}
+
+#professional-challenges img {
+  max-width: 100%;
+  width: 800px;
+  margin: 40px 0;
+}
+
+#professional-challenges p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #FFFFFF;
+  max-width: 792px;
+  margin: 0 auto;
+}
+
+/* Rodapé */
+
+footer {
+  padding: 60px 0;
+  background: linear-gradient(180deg, rgba(51, 168, 219, 0) 0%, rgba(51, 168, 219, 0.2) 100%), #0B0B0B;
+  border-top: 1px solid #33A8DB;
+  color: #FFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .dio-logo {
+  width: 310px;
+  margin-bottom: 16px;
+}
+
+footer p {
+  font-size: 16px;
+  color: #FFFFFF;
+}
+
+footer a {
+  color: #33A8DB;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
