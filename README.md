@@ -39,6 +39,9 @@ Recriando o wiki com layout moderno e design atualizado. Aplicação de conceito
 ### 🎨 Primeira Landing Page
 Criando a primeira landing page com HTML e CSS. Desenvolvimento de páginas de destino atrativas e funcionais.
 
+### 🎥 Clone da Página do YouTube
+Recriando a interface da página de vídeo do YouTube com HTML e CSS, focando em layout com Grid e responsividade.
+
 ### 🧠 Desafios de Código
 Aperfeiçoando lógica e pensamento computacional. Resolução de problemas e desenvolvimento de algoritmos.
 
@@ -99,6 +102,8 @@ Acesse todos os projetos através da nossa página principal:
 DesafiosDIOBootcamp/
 ├── desafioHtml/          # Projetos HTML
 ├── desafioHtmlWiki/      # Recriar Wiki Moderno
+├── desafioCSSLandingPage/  # Primeira Landing Page
+├── desafioYouTube/       # Clone da Página do YouTube
 ├── index.html            # Página principal
 └── README.md             # Este arquivo
 ```
