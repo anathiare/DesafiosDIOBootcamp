@@ -42,12 +42,6 @@ Criando a primeira landing page com HTML e CSS. Desenvolvimento de páginas de d
 ### 🎥 Clone da Página do YouTube
 Recriando a interface da página de vídeo do YouTube com HTML e CSS, focando em layout com Grid e responsividade.
 
-### 🧠 Desafios de Código
-Aperfeiçoando lógica e pensamento computacional. Resolução de problemas e desenvolvimento de algoritmos.
-
-### 🎨 Fundamentos CSS
-Fundamentos de estilização com CSS. Aprendendo cores, tipografia, layout e design responsivo.
-
 ### 📱 Layout Discord Responsivo
 Construindo layout responsivo para site do Discord com CSS. Recriando interface moderna e adaptável.
 
@@ -104,6 +98,7 @@ DesafiosDIOBootcamp/
 ├── desafioHtmlWiki/      # Recriar Wiki Moderno
 ├── desafioCSSLandingPage/  # Primeira Landing Page
 ├── desafioYouTube/       # Clone da Página do YouTube
+├── desafioDiscord/       # Clone da Página do Discord
 ├── index.html            # Página principal
 └── README.md             # Este arquivo
 ```
