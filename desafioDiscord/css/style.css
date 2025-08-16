@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap');
 *, *::before, *::after {
     box-sizing: border-box;
   }
@@ -144,13 +145,13 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 70%;
+    width: 80%;
     padding: 40px 20px;
     box-sizing: border-box;
 
 }
 .feature-title {
-    font-size: 40px;    
+    font-size: 24px;    
     font-weight: 800;
     font-family: 'Open Sans', sans-serif;
     text-align: center;
@@ -160,6 +161,7 @@ body {
     font-size: 40px;
     text-align: center;
     font-weight: 600;
+
 }
 .feature-description {
     font-size: 16px;
@@ -180,10 +182,10 @@ footer {
     .feature,
     .feature-reversed {
         flex-direction: column !important;
-        align-items: center;
-        text-align: center;
+        align-items: flex-start;
+        text-align: left ;
     }
-    .feature-image--study, .feature-image--many, .feature-image--chat,
+    .feature-image--study, .feature-image--many, 
     .feature-image--voice {
         width: 100%;
         height: 220px;
@@ -192,7 +194,17 @@ footer {
         background-repeat: no-repeat;
         margin-top: 80px;
     }
-    .feature-text {
+    .feature-image--chat {
+        width: 100%;           
+        max-width: 320px;     
+        height: 220px;
+        margin: 0 auto 24px auto; 
+        display: block;       
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .feature-text, .feature-text2 {
         width: 100%;
         padding: 0 16px;
     }
@@ -214,4 +226,14 @@ footer {
         flex-direction: column; 
         width: 100%; 
     }
+    .feature-description {
+        text-align: justify; /* ou justify, se quiser efeito de revista */
+        margin: 0 auto;
+        max-width: 90vw;   /* para não grudar nas bordas */
+        font-size: 16px;
+    }
+    .feature-title, .feature-title2 {
+        text-align: left !important;
+    }
+
 }
