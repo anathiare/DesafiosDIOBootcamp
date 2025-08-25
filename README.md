@@ -57,8 +57,8 @@ Aprimorando habilidades em JavaScript. Desenvolvimento de funcionalidades avanç
 ### 💼 Portfólio Front-end
 Construindo portfólio front-end do zero com HTML, CSS e JavaScript. Projeto completo e profissional.
 
-### ⚡ Pokédex JavaScript
-Construindo uma Pokédex com JavaScript. Integração com APIs e desenvolvimento de aplicação interativa.
+### ⚡ Pokédex JavaScript ✅
+Pokédex completa com JavaScript! Integração com PokeAPI, design responsivo, páginas de detalhes e sistema de abas. Projeto interativo e moderno com funcionalidades avançadas.
 
 ### 🎮 Jogo Yu-Gi-Oh!
 Criando jogo de cartas do Yu-Gi-Oh! com JavaScript e CSS. Desenvolvimento de game interativo e divertido.
@@ -99,6 +99,7 @@ DesafiosDIOBootcamp/
 ├── desafioCSSLandingPage/  # Primeira Landing Page
 ├── desafioYouTube/       # Clone da Página do YouTube
 ├── desafioDiscord/       # Clone da Página do Discord
+├── pokedex/              # Pokédex JavaScript ✅
 ├── index.html            # Página principal
 └── README.md             # Este arquivo
 ```
