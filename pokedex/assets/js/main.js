@@ -6,7 +6,7 @@ let maxRecords = 151;
 
 function convertPokemonToLi(pokemon){ 
     return `
-            <li class="pokemon ${pokemon.type}" > 
+            <li class="pokemon ${pokemon.type}" onclick="openPokemonDetail(${pokemon.number})"> 
                 <span class="number">#${pokemon.number}</span> 
                 <span class="name">${pokemon.name}</span> 
 
@@ -45,3 +45,7 @@ loadMoreButton.addEventListener('click', () => {
 
 })
 
+// Função para abrir detalhes do Pokémon
+function openPokemonDetail(pokemonNumber) {
+    window.location.href = `poke-details.html?id=${pokemonNumber}`;
+}
