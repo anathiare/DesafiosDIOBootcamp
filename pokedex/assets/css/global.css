@@ -6,24 +6,64 @@
 
 body {
     background-color: #dedfe2;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    min-height: 100vh;
 }
 
 .content {  
     width: 100vw;
-    height: 100vh;
-    padding: 1rem;
+    height: calc(100vh - 30px);
+    padding: 1.5rem;
     background-color: #fff;
     border-radius: 1rem;
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+    transform: translateZ(0);
+    margin: 1rem 0 0 0;
+    max-height: calc(100vh - 30px);
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+
+
+
+
+
+/* Header fixo */
+.header-fixed {
+    position: relative;
+    z-index: 10;
+    flex-shrink: 0;
+    margin-bottom: 1rem;
+}
+
+/* Área com scroll */
+.scrollable-area {
+    flex: 1;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: relative;
+    z-index: 10;
 }
 
 /* Responsividade para desktop */
 @media screen and (min-width: 992px) {  
     .content {
-        max-width: 992px;
-        height: auto;
-        margin: 1rem auto;
+        max-width: 1200px;
+        height: calc(100vh - 2rem - 30px);
+        margin: 2rem auto 1rem auto;
         border-radius: 1rem;
-        height: auto;
+        overflow: hidden;
+        padding: 2rem;
     }
 }
 

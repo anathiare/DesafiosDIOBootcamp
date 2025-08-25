@@ -1,74 +1,123 @@
 /* Cores de fundo por tipo */
 body.grass {
     background-color: rgba(122, 199, 76, 0.8);
+    position: relative;
+    z-index: 1;
 }
 
 body.fire {
     background-color: rgba(238, 129, 48, 0.8);
+    position: relative;
+    z-index: 1;
 }
 
 body.water {
     background-color: rgba(99, 144, 240, 0.8);
+    position: relative;
+    z-index: 1;
 }
 
 body.electric {
     background-color: rgba(247, 208, 44, 0.8);
+    position: relative;
+    z-index: 1;
 }
 
 body.ice {
     background-color: rgba(150, 217, 214, 0.8);
+    position: relative;
+    z-index: 1;
 }
 
 body.fighting {
     background-color: rgba(192, 48, 40, 0.8);
+    position: relative;
+    z-index: 1;
 }
 
 body.poison {
     background-color: rgba(160, 64, 160, 0.8);
+    position: relative;
+    z-index: 1;
 }
 
 body.ground {
     background-color: rgba(224, 192, 104, 0.8);
+    position: relative;
+    z-index: 1;
 }
 
 body.flying {
     background-color: rgba(168, 144, 240, 0.8);
+    position: relative;
+    z-index: 1;
 }
 
 body.psychic {
     background-color: rgba(248, 88, 136, 0.8);
+    position: relative;
+    z-index: 1;
 }
 
 body.bug {
     background-color: rgba(168, 184, 32, 0.8);
+    position: relative;
+    z-index: 1;
 }
 
 body.rock {
     background-color: rgba(184, 160, 56, 0.8);
+    position: relative;
+    z-index: 1;
 }
 
 body.ghost {
     background-color: rgba(112, 88, 152, 0.8);
+    position: relative;
+    z-index: 1;
 }
 
 body.steel {
     background-color: rgba(184, 184, 208, 0.8);
+    position: relative;
+    z-index: 1;
 }
 
 body.dragon {
     background-color: rgba(112, 56, 248, 0.8);
+    position: relative;
+    z-index: 1;
 }
 
 body.dark {
     background-color: rgba(112, 88, 72, 0.8);
+    position: relative;
+    z-index: 1;
 }
 
 body.fairy {
     background-color: rgba(238, 153, 172, 0.8);
+    position: relative;
+    z-index: 1;
 }
 
 body.normal {
     background-color: rgba(168, 168, 120, 0.8);
+    position: relative;
+    z-index: 1;
+}
+
+/* Imagem da Pokébola de fundo - Página de detalhes */
+.pokeball-bg {
+    position: fixed;
+    top: -80px;
+    right: -60px;
+    width: 350px;
+    height: 350px;
+    opacity: 0.2;
+    z-index: 0;
+    pointer-events: none;
+    transform: rotate(-25deg);
 }
 
 /* Container principal */
@@ -411,6 +460,8 @@ body.normal {
 
 .evolution-pokemon:hover {
     transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    background-color: #e9ecef;
 }
 
 .evolution-pokemon img {

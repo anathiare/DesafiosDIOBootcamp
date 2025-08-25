@@ -3,6 +3,11 @@ function goBack() {
     window.history.back();
 }
 
+// Função para abrir detalhes do Pokémon
+function openPokemonDetail(pokemonNumber) {
+    window.location.href = `poke-details.html?id=${pokemonNumber}`;
+}
+
 // Função para obter parâmetros da URL
 function getUrlParameter(name) {
     const urlParams = new URLSearchParams(window.location.search);
@@ -198,7 +203,7 @@ function createEvolutionStep(speciesName, speciesUrl) {
     const imageUrl = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${pokemonId}.png`;
     
     return `
-        <div class="evolution-pokemon">
+        <div class="evolution-pokemon" onclick="openPokemonDetail(${pokemonId})" style="cursor: pointer;">
             <img src="${imageUrl}" alt="${speciesName}" onerror="this.src='https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemonId}.png'">
             <span class="evolution-name">${speciesName.charAt(0).toUpperCase() + speciesName.slice(1)}</span>
         </div>

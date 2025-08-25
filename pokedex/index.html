@@ -25,16 +25,25 @@
 
 <body>
     <section class="content">
-        <h1>
-            PokéDex
-        </h1>
-        <ol id="pokemonList" class="pokemons">
-           
-        </ol>
-        <div class="pagination">
-            <button id="loadMoreButton" class="load-more-button">
-                Carregar mais
-            </button>
+        <img src="assets/imgs/poke_ball.png" alt="Pokébola" class="pokeball-bg" onerror="console.log('Erro ao carregar imagem:', this.src)">
+        
+        <!-- Header fixo -->
+        <div class="header-fixed">
+            <h1>
+                PokéDex
+            </h1>
+        </div>
+        
+        <!-- Área com scroll -->
+        <div class="scrollable-area">
+            <ol id="pokemonList" class="pokemons">
+               
+            </ol>
+            <div class="pagination">
+                <button id="loadMoreButton" class="load-more-button">
+                    <img src="assets/imgs/poke_button.png" alt="Carregar mais Pokémon" class="poke-button-img">
+                </button>
+            </div>
         </div>
     </section>
 

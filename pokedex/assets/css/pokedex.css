@@ -9,58 +9,58 @@
 
 /* Cores por tipo */
 .grass {
-    background-color: #7ac74c;
+    background-color: rgba(122, 199, 76, 0.8);
 }
 .poison {
-    background-color: #a040a0;
+    background-color: rgba(160, 64, 160, 0.8);
 }
 .fire {
-    background-color: #ee8130;
+    background-color: rgba(238, 129, 48, 0.8);
 }       
 .water {
-    background-color: #6390f0;
+    background-color: rgba(99, 144, 240, 0.8);
 }
 .electric {
-    background-color: #f7d02c;
+    background-color: rgba(247, 208, 44, 0.8);
 }
 .ice {
-    background-color: #96d9d6;
+    background-color: rgba(150, 217, 214, 0.8);
 }
 .dragon {
-    background-color: #6f38f8;
+    background-color: rgba(111, 56, 248, 0.8);
 }
 .dark {
-    background-color: #705746;
+    background-color: rgba(112, 87, 70, 0.8);
 }
 .fairy {
-    background-color: #d685ad;
+    background-color: rgba(214, 133, 173, 0.8);
 }
 .normal {
-    background-color: #a8a878;
+    background-color: rgba(168, 168, 120, 0.8);
 }
 .bug {
-    background-color: #a8b820;
+    background-color: rgba(168, 184, 32, 0.8);
 }               
 .ground {
-    background-color: #e0c068;
+    background-color: rgba(224, 192, 104, 0.8);
 }
 .psychic {
-    background-color: #f85888;
+    background-color: rgba(248, 88, 136, 0.8);
 }
 .rock {
-    background-color: #b8a038;
+    background-color: rgba(184, 160, 56, 0.8);
 }
 .steel {
-    background-color: #b8b8d0;
+    background-color: rgba(184, 184, 208, 0.8);
 }
 .flying {
-    background-color: #a890f0;
+    background-color: rgba(168, 144, 240, 0.8);
 }
 .ghost {
-    background-color: #705898;
+    background-color: rgba(112, 88, 152, 0.8);
 }
 .fighting { 
-    background-color: #c03028;
+    background-color: rgba(192, 48, 40, 0.8);
 }
 
 /* Cards de Pokémon */
@@ -71,6 +71,11 @@
     padding: 1rem 1rem 1rem 1rem;
     border-radius: 1rem;
     color: #fff;
+    position: relative;
+    z-index: 10;
+    min-width: 200px;
+    min-height: 130px;
+    overflow: hidden;
 }
 
 .pokemon .details {
@@ -135,29 +140,62 @@
 }
 
 .pagination button {
-    padding: .25rem .5rem;
+    padding: 0;
     margin: .25rem 0;
-    font-size: .625rem;
-    color: #fff;
-    background-color: #6c79db;
+    background: none;
     border: none;
-    border-radius: 1rem;
     cursor: pointer;
     transition: .3s ease-in-out;
+    border-radius: 0;
 }
 
 .pagination button:hover {
-    background-color: #5462b3;
+    background-color: transparent;
+    transform: translateY(-2px);
+}
+
+.pagination button:hover .poke-button-img {
+    filter: drop-shadow(0 4px 5px rgba(0, 0, 0, 0.7));
+}
+
+.poke-button-img {
+    width: 60px;
+    height: 20px;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+/* Imagem da Pokébola de fundo */
+.pokeball-bg {
+    position: absolute;
+    top: -80px;
+    right: -60px;
+    width: 350px;
+    height: 350px;
+    opacity: 0.2;
+    z-index: 0;
+    pointer-events: none;
+    transform: rotate(-25deg);
+}
+
+/* Título da Pokédex */
+h1 {
+    position: relative;
+}
+
+/* Grid de Pokémon */
+.pokemons {
+    position: relative;
 }
 
 /* Responsividade do grid */
-@media screen and (min-width: 380px) {
+@media screen and (min-width: 450px) {
     .pokemons {
         grid-template-columns: 1fr 1fr;
     }
 }
 
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 720px) {
     .pokemons {
         grid-template-columns: 1fr 1fr 1fr;
     }
