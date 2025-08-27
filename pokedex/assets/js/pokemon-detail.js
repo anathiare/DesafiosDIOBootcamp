@@ -50,9 +50,9 @@ function loadPokemonDetails() {
             return response.json();
         })
         .then(pokemonData => {
-            // APLICAR A COR DE FUNDO EM TODA A PÁGINA BASEADA NO TIPO DO POKÉMON
+            // APLICAR A COR DE FUNDO NO .content BASEADA NO TIPO DO POKÉMON
             const primaryType = pokemonData.types[0].type.name;
-            document.body.classList.add(primaryType);
+            document.querySelector('.content').classList.add(primaryType);
             
             // Preencher informações do pokémon
             document.getElementById('pokemonName').textContent = pokemonData.name;
