@@ -60,8 +60,8 @@ Construindo portfólio front-end do zero com HTML, CSS e JavaScript. Projeto com
 ### ⚡ Pokédex JavaScript ✅
 Pokédex completa com JavaScript! Integração com PokeAPI, design responsivo, páginas de detalhes e sistema de abas. Projeto interativo e moderno com funcionalidades avançadas.
 
-### 🎮 Jogo Yu-Gi-Oh!
-Criando jogo de cartas do Yu-Gi-Oh! com JavaScript e CSS. Desenvolvimento de game interativo e divertido.
+### 🎮 Jogo Yu-Gi-Oh! Jo-Ken-Po Edition ✅
+Jogo de cartas inspirado no Yu-Gi-Oh! com mecânica de pedra, papel e tesoura. Sistema de pontuação, animações CSS, trilha sonora temática e design responsivo. Projeto completo com lógica de jogo e interface interativa.
 
 ### 🌐 GitHub Pages
 Publicando portfólio profissional no GitHub Pages. Deploy e publicação de projetos web.
@@ -99,7 +99,8 @@ DesafiosDIOBootcamp/
 ├── desafioCSSLandingPage/  # Primeira Landing Page
 ├── desafioYouTube/       # Clone da Página do YouTube
 ├── desafioDiscord/       # Clone da Página do Discord
-├── pokedex/              # Pokédex JavaScript ✅
+├── pokedex/              # Pokédex JavaScript 
+├── gameYuGiOh/           # Jogo Yu-Gi-Oh! Jo-Ken-Po 
 ├── index.html            # Página principal
 └── README.md             # Este arquivo
 ```
