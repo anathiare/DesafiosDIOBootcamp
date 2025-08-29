@@ -1,0 +1,29 @@
+{
+    "CSS Class": {
+        "prefix": ".",
+        "body": [
+            ".$1 {",
+            "\t$2",
+            "}"
+        ],
+        "description": "Cria uma classe CSS com chaves"
+    },
+    "CSS ID": {
+        "prefix": "#",
+        "body": [
+            "#$1 {",
+            "\t$2",
+            "}"
+        ],
+        "description": "Cria um ID CSS com chaves"
+    },
+    "CSS Selector": {
+        "prefix": "selector",
+        "body": [
+            "$1 {",
+            "\t$2",
+            "}"
+        ],
+        "description": "Cria um seletor CSS com chaves"
+    }
+}

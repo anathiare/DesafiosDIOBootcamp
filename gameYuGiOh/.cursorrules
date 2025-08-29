@@ -1,0 +1,11 @@
+# Configurações do Cursor para auto-fechamento de chaves e aspas
+# Estas regras garantem que o editor mantenha o comportamento esperado
+
+- editor.autoClosingBrackets: always
+- editor.autoClosingQuotes: always
+- editor.autoClosingOvertype: always
+- editor.autoClosingDelete: always
+- editor.bracketPairColorization.enabled: true
+- editor.guides.bracketPairs: true
+- editor.guides.bracketPairsHorizontal: true
+- editor.guides.highlightActiveBracketPair: true
