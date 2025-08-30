@@ -33,8 +33,8 @@ Primeiro desafio focado em contribuição para projetos open source. Aprendendo 
 ### 🌐 Criar Página Web com HTML
 Desafio focado em HTML puro. Criação de uma página web completa demonstrando conhecimentos em estruturação, semântica e boas práticas de HTML5.
 
-### 📚 Recriar Wiki Moderno
-Recriando o wiki com layout moderno e design atualizado. Aplicação de conceitos de design web contemporâneo.
+### 📚 Recriar Wiki 
+Recriando o wiki com layout padrão. Aplicação de conceitos de design web contemporâneo.
 
 ### 🎨 Primeira Landing Page
 Criando a primeira landing page com HTML e CSS. Desenvolvimento de páginas de destino atrativas e funcionais.
@@ -51,9 +51,6 @@ Explorando lógica de programação com JavaScript. Fundamentos de programação
 ### 🦸 Classificador de Herói
 Sistema para classificar nível de herói. Aplicação prática de lógica de programação e condicionais.
 
-### 🚀 Habilidades JavaScript
-Aprimorando habilidades em JavaScript. Desenvolvimento de funcionalidades avançadas e interativas.
-
 ### 💼 Portfólio Front-end
 Construindo portfólio front-end do zero com HTML, CSS e JavaScript. Projeto completo e profissional.
 
@@ -65,9 +62,6 @@ Jogo de cartas inspirado no Yu-Gi-Oh! com mecânica de pedra, papel e tesoura. S
 
 ### 🌐 GitHub Pages
 Publicando portfólio profissional no GitHub Pages. Deploy e publicação de projetos web.
-
-### 🔧 Soluções JavaScript
-Desenvolvendo soluções com JavaScript. Projeto final integrando todos os conhecimentos adquiridos.
 
 ---
 
@@ -94,15 +88,16 @@ Acesse todos os projetos através da nossa página principal:
 ### 📁 Estrutura do Repositório
 ```
 DesafiosDIOBootcamp/
-├── desafioHtml/          # Projetos HTML
-├── desafioHtmlWiki/      # Recriar Wiki Moderno
+├── desafioHtml/            # Projetos HTML
+├── desafioHtmlWiki/        # Recriar Wiki Moderno
 ├── desafioCSSLandingPage/  # Primeira Landing Page
-├── desafioYouTube/       # Clone da Página do YouTube
-├── desafioDiscord/       # Clone da Página do Discord
-├── pokedex/              # Pokédex JavaScript 
-├── gameYuGiOh/           # Jogo Yu-Gi-Oh! Jo-Ken-Po 
-├── index.html            # Página principal
-└── README.md             # Este arquivo
+├── desafioYouTube/         # Clone da Página do YouTube
+├── desafioDiscord/         # Clone da Página do Discord
+├── dio-lab-portfolio/      # Portfólio Front-end
+├── pokedex/                # Pokédex JavaScript 
+├── gameYuGiOh/             # Jogo Yu-Gi-Oh! Jo-Ken-Po Edition
+├── index.html              # Página principal
+└── README.md               # Este arquivo
 ```
 
 ---
